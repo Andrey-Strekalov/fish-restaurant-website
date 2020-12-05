@@ -1,0 +1,49 @@
+ @media (max-width: 1300px) {
+          padding: 0 40px;
+        }
+        @media (max-width: 1115px) {
+          padding: 0 30px;
+        }
+        @media (max-width: 995px) {
+          padding: 0 20px;
+        }
+        @media (max-width: 840px) {
+          padding: 0 15px;
+        }
+
+
+
+        .social-site-contacts {
+      display: flex;
+      flex-direction: column;
+      width: 60px;
+      height: 220px;
+      justify-content: space-between;
+      .contacts__item {
+        border-radius: 50%;
+        border: 1px solid rgb(160, 160, 160);
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        vertical-align: midlle;
+        img {
+          padding: 10px;
+        }
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+    <div class="social-site-contacts">
+                    <div class="contacts__item"><img src="./image/facebook.svg" alt="facebook"></div>
+                    <div class="contacts__item"><img src="./image/twitter.svg" alt="twitter"></div>
+                    <div class="contacts__item"><img src="./image/instagramm.svg" alt="instagramm"></div>
+
+                </div> 
