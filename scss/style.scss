@@ -1,3 +1,119 @@
 * {
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background: url("../image/header-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  .title-block {
+    height: 937px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1280px;
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      margin: 0 0 226px 0;
+      .navigation__item {
+        font-family: Open Sans;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        padding: 0 54px;
+      }
+      img {
+        transform: translateY(80px);
+      }
+    }
+    .content-block {
+      display: flex;
+      align-items: center;
+      width: 1280px;
+      height: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      span {
+        font-family: Open Sans;
+        font-size: 12px;
+        color: white;
+        letter-spacing: 0.5em;
+        margin: 0 0 25px 0;
+      }
+      h1 {
+        font-family: Gugi;
+        color: white;
+        font-size: 96px;
+        font-weight: 100;
+        letter-spacing: 1pt;
+        position: relative;
+        margin: 0 0 60px 0;
+      }
+      h1::before {
+        content: "";
+        background: #e8c300;
+        border-radius: 50px;
+        width: 60px;
+        height: 5.11px;
+        position: absolute;
+        top: 145px;
+        left: 46.5%;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 440px;
+        margin: 0 0 92px 0;
+        button {
+          background: #e8c300;
+          border-radius: 5px;
+          font-family: Open Sans;
+          font-size: 12px;
+          line-height: 20px;
+          vertical-align: middle;
+          text-align: center;
+          color: white;
+          width: 200px;
+          height: 60px;
+        }
+        .opacity-button {
+          background: #e8c10000;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+      }
+      .button-spoiler {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(122, 118, 118);
+        padding: 20px;
+        img {
+          padding: 10px;
+          background: white;
+          border-radius: 50%;
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}
