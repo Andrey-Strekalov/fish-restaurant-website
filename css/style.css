@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -20,6 +21,7 @@ button {
   background: url("../image/header-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .wrapper .title-block {
@@ -64,9 +66,62 @@ button {
   padding: 0 54px;
 }
 
+@media (max-width: 1300px) {
+  .wrapper .title-block .navigation .navigation__item {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 1115px) {
+  .wrapper .title-block .navigation .navigation__item {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 995px) {
+  .wrapper .title-block .navigation .navigation__item {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 840px) {
+  .wrapper .title-block .navigation .navigation__item {
+    padding: 0 15px;
+  }
+}
+
 .wrapper .title-block .navigation img {
   -webkit-transform: translateY(80px);
           transform: translateY(80px);
+}
+
+.wrapper .title-block .mobile-navigation {
+  height: 200px;
+  width: 740px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: none;
+  margin: 0 0 130px 0;
+}
+
+.wrapper .title-block .mobile-navigation .menu-icon {
+  width: 50px;
+  height: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #ffef61), color-stop(21%, transparent), color-stop(40%, transparent), color-stop(41%, #ffef61), color-stop(60%, #ffef61), color-stop(61%, transparent), color-stop(80%, transparent), color-stop(81%, #ffef61));
+  background-image: linear-gradient(to bottom, #ffef61 20%, transparent 21%, transparent 40%, #ffef61 41%, #ffef61 60%, transparent 61%, transparent 80%, #ffef61 81%);
+  background-size: cover;
+  margin: 0 30px 0 0;
 }
 
 .wrapper .title-block .content-block {
@@ -106,6 +161,13 @@ button {
   margin: 0 0 60px 0;
 }
 
+@media (max-width: 840px) {
+  .wrapper .title-block .content-block h1 {
+    font-size: 80px;
+    margin: 0 0 76px 0;
+  }
+}
+
 .wrapper .title-block .content-block h1::before {
   content: "";
   background: #e8c300;
@@ -115,6 +177,12 @@ button {
   position: absolute;
   top: 145px;
   left: 46.5%;
+}
+
+@media (max-width: 840px) {
+  .wrapper .title-block .content-block h1::before {
+    top: 130px;
+  }
 }
 
 .wrapper .title-block .content-block .buttons {
