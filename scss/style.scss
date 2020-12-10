@@ -15,6 +15,9 @@ button {
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  @media (max-width: 700px) {
+    background: rgb(14, 28, 41);
+  }
   .title-block {
     height: 937px;
     display: flex;
@@ -25,9 +28,9 @@ button {
       display: flex;
       flex-direction: row;
       margin: 0 0 226px 0;
-      // @media (max-width: 770px) {
-      //   display: none;
-      // }
+      @media (max-width: 760px) {
+        display: none;
+      }
       .navigation__item {
         font-family: Open Sans;
         font-style: normal;
@@ -57,32 +60,55 @@ button {
     }
     .mobile-navigation {
       height: 200px;
-      width: 740px;
+      width: 700px;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
       display: none;
       margin: 0 0 130px 0;
-      // @media (max-width: 770px) {
-      //   display: flex;
-      // }
+      @media (max-width: 760px) {
+        display: flex;
+      }
+      @media (max-width: 715px) {
+        width: 650px;
+      }
+      @media (max-width: 700px) {
+        justify-content: flex-end;
+      }
+      @media (max-width: 620px) {
+        width: 550px;
+        height: 100px;
+      }
+      @media (max-width: 510px) {
+        width: 400px;
+        height: 150px;
+      }
+      img {
+        @media (max-width: 700px) {
+          display: none;
+        }
+      }
       .menu-icon {
         width: 50px;
         height: 50px;
         background-image: linear-gradient(
           to bottom,
-          rgb(255, 239, 97) 20%,
+          #e8c300 20%,
           transparent 21%,
           transparent 40%,
-          rgb(255, 239, 97) 41%,
-          rgb(255, 239, 97) 60%,
+          #e8c300 41%,
+          #e8c300 60%,
           transparent 61%,
           transparent 80%,
-          rgb(255, 239, 97) 81%
+          #e8c300 81%
         );
         background-size: cover;
         margin: 0 30px 0 0;
+        @media (max-width: 685px) {
+          width: 40px;
+          height: 40px;
+        }
       }
     }
     .content-block {
@@ -101,6 +127,10 @@ button {
         color: white;
         letter-spacing: 0.5em;
         margin: 0 0 25px 0;
+        @media (max-width: 530px) {
+          font-size: 10px;
+          letter-spacing: 0.3em;
+        }
       }
       h1 {
         font-family: Gugi;
@@ -113,6 +143,13 @@ button {
         @media (max-width: 840px) {
           font-size: 80px;
           margin: 0 0 76px 0;
+        }
+        @media (max-width: 685px) {
+          font-size: 60px;
+        }
+        @media (max-width: 530px) {
+          font-size: 40px;
+          margin: 0 0 50px 0;
         }
       }
       h1::before {
@@ -127,6 +164,17 @@ button {
         @media (max-width: 840px) {
           top: 130px;
         }
+        @media (max-width: 760px) {
+          left: 46%;
+        }
+        @media (max-width: 685px) {
+          top: 110px;
+          left: 45%;
+        }
+        @media (max-width: 530px) {
+          top: 70px;
+          width: 40px;
+        }
       }
       .buttons {
         display: flex;
@@ -134,6 +182,9 @@ button {
         justify-content: space-between;
         width: 440px;
         margin: 0 0 92px 0;
+        @media (max-width: 620px) {
+          width: 340px;
+        }
         button {
           background: #e8c300;
           border-radius: 5px;
@@ -145,6 +196,10 @@ button {
           color: white;
           width: 200px;
           height: 60px;
+          @media (max-width: 620px) {
+            width: 150px;
+            height: 40px;
+          }
         }
         .opacity-button {
           background: #e8c10000;
@@ -160,6 +215,16 @@ button {
         justify-content: center;
         border: 1px solid rgb(122, 118, 118);
         padding: 20px;
+        @media (max-width: 530px) {
+          width: 15px;
+          height: 15px;
+          padding: 20px;
+        }
+        @media (max-width: 375px) {
+          width: 10px;
+          height: 10px;
+          padding: 20px;
+        }
         img {
           padding: 10px;
           background: white;
