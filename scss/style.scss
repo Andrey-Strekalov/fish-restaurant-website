@@ -11,13 +11,11 @@ button {
 .wrapper {
   display: flex;
   justify-content: center;
-  background: url("../image/header-bg.jpg") no-repeat;
+  background: url("../imges/header-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  @media (max-width: 700px) {
-    background: rgb(14, 28, 41);
-  }
+  height: 100vh;
   .title-block {
     height: 937px;
     display: flex;
@@ -233,6 +231,115 @@ button {
           height: 15px;
         }
       }
+    }
+  }
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 0 170px 0;
+    width: 100vw;
+    background: #1a5479;
+    position: absolute;
+    top: 0;
+    @media (max-height: 810px) {
+      position: static;
+    }
+    .navigation__item {
+      font-family: Open Sans;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      padding: 0 54px;
+      @media (max-width: 1300px) {
+        padding: 0 40px;
+      }
+      @media (max-width: 1115px) {
+        padding: 0 30px;
+      }
+      @media (max-width: 995px) {
+        padding: 0 20px;
+      }
+      @media (max-width: 840px) {
+        padding: 0 15px;
+      }
+    }
+    img {
+      transform: translateY(50%);
+    }
+  }
+  .content {
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 290px 0 0 0;
+    @media (max-height: 810px) {
+      margin: 0;
+    }
+    .info-block {
+      text-align: center;
+      width: 600px;
+      padding: 0 40px 0 0;
+      h2 {
+        font-family: "Gugi", cursive;
+        font-size: 36px;
+        line-height: 48px;
+        position: relative;
+        margin: 0 0 40px 0;
+      }
+      h2::before {
+        content: "";
+        position: absolute;
+        width: 59.19px;
+        height: 5px;
+        left: 265px;
+        top: 60px;
+        background: #e8c300;
+        border-radius: 50px;
+      }
+      .bold-paragraph {
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 0 20px 0;
+      }
+      .main-paragraph {
+        font-family: "Open Sans";
+        font-weight: 400;
+      }
+    }
+    .img-about {
+      position: relative;
+      img {
+        width: 490px;
+        height: 490px;
+      }
+    }
+    .img-about::after {
+      content: "";
+      position: absolute;
+      width: 230px;
+      height: 230px;
+      left: 340px;
+      top: 115px;
+      border: 20px solid #e8c300;
+
+      border-radius: 2%;
+      z-index: 100;
     }
   }
 }
