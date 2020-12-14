@@ -8,6 +8,29 @@ a {
 button {
   border: none;
 }
+%nav__item {
+  font-family: Open Sans;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 54px;
+  @media (max-width: 1300px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 1115px) {
+    padding: 0 30px;
+  }
+  @media (max-width: 995px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 840px) {
+    padding: 0 15px;
+  }
+}
 .wrapper {
   display: flex;
   justify-content: center;
@@ -30,27 +53,7 @@ button {
         display: none;
       }
       .navigation__item {
-        font-family: Open Sans;
-        font-style: normal;
-        font-size: 12px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #ffffff;
-        padding: 0 54px;
-        @media (max-width: 1300px) {
-          padding: 0 40px;
-        }
-        @media (max-width: 1115px) {
-          padding: 0 30px;
-        }
-        @media (max-width: 995px) {
-          padding: 0 20px;
-        }
-        @media (max-width: 840px) {
-          padding: 0 15px;
-        }
+        @extend %nav__item;
       }
       img {
         transform: translateY(80px);
@@ -248,34 +251,15 @@ button {
     justify-content: center;
     margin: 0 0 170px 0;
     width: 100vw;
-    background: #1a5479;
+    background: #38291a;
     position: absolute;
     top: 0;
     @media (max-height: 810px) {
       position: static;
     }
     .navigation__item {
-      font-family: Open Sans;
-      font-style: normal;
-      font-size: 12px;
-      line-height: 18px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #ffffff;
-      padding: 0 54px;
-      @media (max-width: 1300px) {
-        padding: 0 40px;
-      }
-      @media (max-width: 1115px) {
-        padding: 0 30px;
-      }
-      @media (max-width: 995px) {
-        padding: 0 20px;
-      }
-      @media (max-width: 840px) {
-        padding: 0 15px;
-      }
+      @extend %nav__item;
+      font-weight: 700; 
     }
     img {
       transform: translateY(50%);
@@ -286,7 +270,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 290px 0 0 0;
+    margin: 250px 0 0 0;
     @media (max-height: 810px) {
       margin: 0;
     }
