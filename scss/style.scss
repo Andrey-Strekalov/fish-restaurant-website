@@ -396,3 +396,18 @@ button {
     }
   }
 }
+.footer {
+  height: 135px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .copyright {
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
