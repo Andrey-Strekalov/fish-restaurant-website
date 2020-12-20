@@ -497,3 +497,26 @@ button {
   border-radius: 2%;
   z-index: 100;
 }
+
+.footer {
+  height: 135px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .copyright {
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
