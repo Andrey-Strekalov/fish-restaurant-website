@@ -461,7 +461,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 170px 0;
+  margin: 0 0 150px 0;
   width: 100%;
   background: #38291a;
 }
@@ -519,7 +519,8 @@ button {
 .wrapper__1 .mobile-navigation span {
   font-size: 25px;
   color: white;
-  font-family: Aquire;
+  font-family: 'Jura', sans-serif;
+  font-weight: 500;
   padding: 0 0 0 20px;
   letter-spacing: 0.15em;
 }
