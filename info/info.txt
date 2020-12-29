@@ -1,113 +1,19 @@
-.container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: white;
-  width: 100vw;
-  .navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 0 170px 0;
-    width: 100%;
-    background: #38291a;
-    position: absolute;
-    top: 0;
-    @media (max-height: 810px) {
-      position: static;
-    }
-    .navigation__item {
-      @extend %nav__item;
-      font-weight: 700;
-    }
-    img {
-      transform: translateY(50%);
-    }
-  }
-  .content {
-    width: 78%;
-    height: 56.7%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 250px 0 0 0;
-    @media (max-height: 810px) {
-      margin: 0;
-    }
-    .info-block {
-      text-align: center;
-      max-width: 600px;
-      padding: 0 40px 0 0;
-      @media (max-width: 1331px) {
-       width: 550px; 
-      }
-      h2 {
-        font-family: "Gugi", cursive;
-        font-size: 36px;
-        line-height: 48px;
-        position: relative;
-        margin: 0 0 40px 0;
-      }
-      h2::before {
-        content: "";
-        position: absolute;
-        width: 59.19px;
-        height: 5px;
-        left: 44%;
-        top: 60px;
-        background: #e8c300;
-        border-radius: 50px;
-      }
-      .bold-paragraph {
-        font-family: "Open Sans";
-        font-size: 18px;
-        font-weight: 700;
-        margin: 0 0 20px 0;
-      }
-      .main-paragraph {
-        font-family: "Open Sans";
-        font-weight: 400;
-      }
-    }
-    .img-about {
-      position: relative;
-      width: 44%;
-      height: 100%;
-      img {
-        width: 85%;
-        height: 99%;
-      }
-    }
-    .img-about::after {
-      content: "";
-      position: absolute;
-      width: 47%;
-      height: 47%;
-      left: 59%;
-      top: 26%;
-      border: 20px solid #e8c300;
-      border-radius: 2%;
-      z-index: 100;
-      @media (max-width: 1300px) {
+<div class="navigation">
+          <a href="" class="navigation__item">HOME</a>
+          <a href="./about-page.html" class="navigation__item">ABOUT</a>
+          <a href="" class="navigation__item">TEAM</a>
+          <a href="" class="navigation__item">BOOCKING</a>
+          <span><img src="./imges/steering-wheel.svg" alt="" /></span>
+          <a href="" class="navigation__item">MENU</a>
+          <a href="" class="navigation__item">GALERIE</a>
+          <a href="" class="navigation__item">EVENTS</a>
+          <a href="" class="navigation__item">CONTACT</a>
+        </div>
+        <div class="mobile-navigation">
+          <img src="./image/steering-wheel.svg" alt="" />
+          <div class="menu-icon"></div>
+        </div>
         
-      }
-    }
-  }
-}
-.footer {
-  height: 135px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .copyright {
-    font-family: Open Sans;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 12px;
-    color: rgba(255, 255, 255, 0.5);
-  }
-}
+    <div class="footer">
+      <p class="copyright">© Copyright Mindblister 2019</p>
+    </div> 

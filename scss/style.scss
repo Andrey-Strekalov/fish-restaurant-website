@@ -306,7 +306,7 @@ button {
 //     color: rgba(255, 255, 255, 0.5);
 //   }
 // }
-.container {
+.wrapper__1 {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -319,7 +319,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 0 170px 0;
+    margin: 0 0 150px 0;
     width: 100%;
     background: #38291a;
     @media (max-width: 760px) {
@@ -349,10 +349,11 @@ button {
     @media (max-width: 760px) {
       display: flex;
     }
-    span{
+    span {
       font-size: 25px;
       color: white;
-      font-family: Aquire;
+      font-family: 'Jura', sans-serif;
+      font-weight: 500;
       padding: 0 0 0 20px;
       letter-spacing: 0.15em;
     }
@@ -422,10 +423,10 @@ button {
     @media (max-width: 910px) {
       padding: 0;
     }
-    @media (max-width: 520px){
-     width: 400px;
+    @media (max-width: 520px) {
+      width: 400px;
     }
-    @media (max-width: 415px){
+    @media (max-width: 415px) {
       width: 360px;
     }
     h2 {
@@ -434,7 +435,7 @@ button {
       line-height: 48px;
       position: relative;
       margin: 0 0 40px 0;
-      @media (max-width: 520px){
+      @media (max-width: 520px) {
         font-size: 34px;
       }
       @media (max-width: 415px) {
@@ -451,11 +452,11 @@ button {
       top: 60px;
       background: #e8c300;
       border-radius: 50px;
-       @media (max-width: 415px) {
-       width: 49.19px;
-       height: 3.5px;
-       top: 50px;
-       left: 43%;
+      @media (max-width: 415px) {
+        width: 49.19px;
+        height: 3.5px;
+        top: 50px;
+        left: 43%;
       }
     }
     .bold-paragraph {
@@ -469,7 +470,7 @@ button {
       @media (max-width: 910px) {
         font-size: 18px;
       }
-      @media (max-width: 520px){
+      @media (max-width: 520px) {
         font-size: 15px;
       }
     }
@@ -483,7 +484,7 @@ button {
       @media (max-width: 910px) {
         font-size: 16px;
       }
-      @media (max-width: 520px){
+      @media (max-width: 520px) {
         font-size: 15px;
       }
     }
@@ -558,8 +559,89 @@ button {
   align-items: center;
   justify-content: center;
   @media (max-width: 760px) {
-   height: 100px;
+    height: 100px;
   }
+  .copyright {
+    font-family: Open Sans;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.wrapper__2 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../imges/team-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  .container {
+    width: 1280px;
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 0 170px 0;
+      width: 100%;
+      .navigation__item {
+        @extend %nav__item;
+        font-weight: 700;
+      }
+      img {
+        transform: translateY(50%);
+      }
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      .chef-photo {
+        position: relative;
+      }
+      .chef-photo::after {
+        content: "";
+        position: absolute;
+        width: 230px;
+        height: 230px;
+        right: 69%;
+        top: 23.4%;
+        border: 20px solid #e8c300;
+        border-radius: 2%;
+        z-index: 100;
+      }
+      .info-block {
+        h2 {
+          color: #ffffff;
+          font-family: "Gugi", cursive;
+          font-size: 36px;
+          font-weight: 500;
+        }
+        .bold-paragraphf {
+          font-family: "Open Sans";
+          font-size: 18px;
+          font-weight: 700;
+          margin: 0 0 20px 0;
+          color: #ffffff;
+        }
+        .main-paragraphf {
+          font-family: "Open Sans";
+          font-weight: 300;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+.footer {
+  height: 135px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .copyright {
     font-family: Open Sans;
     font-weight: normal;
